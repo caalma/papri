@@ -1,0 +1,12 @@
+lojban
+english
+español
+português
+galego
+esperanto
+italiana
+polski
+lidepla
+русский
+ગુજરાતી
+日本語
