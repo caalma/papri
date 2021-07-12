@@ -22,7 +22,7 @@ folder:
 
 
 url:
-  github_repository: 'https:/github.com/caalma/papri/'
+  github_repository: 'https://github.com/caalma/papri/'
 
 
 menu_texts_list_file: './cfg/menu-automatic.yml'
