@@ -40,7 +40,7 @@ def extract_info(path, mode, keys):
 	return resp
 
 def main():
-	file_dat = '../cfg/menu-automatic.yml'
+	file_dat = '../docs/cfg/menu-automatic.yml'
 	data = {
 		'texts': extract_info('../texts/', 'yaml', ['title']),
 	}

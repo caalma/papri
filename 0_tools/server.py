@@ -115,6 +115,6 @@ def server(public_folder='./', host='localhost', port=8000):
 
 
 if __name__ == '__main__':
-    url, server_start, server_stop = server(public_folder='..', port=8081)
+    url, server_start, server_stop = server(public_folder='../docs/', port=8081)
     webbrowser.open_new_tab(url)
     server_start()

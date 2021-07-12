@@ -1,7 +1,7 @@
 #!/bin/bash
 # -*- coding:utf8 -*-
 
-R='../img/'
+R='../docs/img/'
 A='favicon_256.png'
 
 convert $R$A -filter Lanczos -resize 60x60 $R'favicon_60.png' 
