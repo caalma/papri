@@ -42,7 +42,7 @@ def extract_info(path, mode, keys):
 def main():
 	file_dat = '../docs/cfg/menu-automatic.yml'
 	data = {
-		'texts': extract_info('../texts/', 'yaml', ['title']),
+		'texts': extract_info('../docs/texts/', 'yaml', ['title']),
 	}
 	with open(file_dat, 'w') as f:
 		f.write(yaml.safe_dump(data))
