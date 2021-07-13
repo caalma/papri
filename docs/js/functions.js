@@ -21,6 +21,7 @@ function generate_menu(){
 	    G.html_des = $('#des');
 	    G.html_com = $('#com');
 	    G.html_aut = $('#aut');
+		G.html_lic = $('#lic');
 	    G.html_tex = $('#tex');
 
 	  clear_document();
@@ -100,6 +101,7 @@ function clear_document(){
 	G.html_des.html('').hide();
 	G.html_com.html('').hide();
 	G.html_aut.html('').hide();
+	G.html_lic.html('').hide();
 	G.html_tex.html('');
 }
 
@@ -118,11 +120,12 @@ function show_document (d){
 	if(d.authors){
 		G.html_aut.html(marked(d.authors)).show();
 	}
-
+	if(d.license){
+		G.html_lic.html(marked(d.license)).show();
+	}
 	for(i in ld){
 		G.html_lan.append(G.templates.lan({id: ld[i]}));
 	}
-
 	for(j in d.paragraphs){
 		G.html_tex.append(G.templates.tex({n: parseInt(j)+1, d: d.paragraphs[j], ld: ld}));
 	}

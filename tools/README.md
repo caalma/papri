@@ -21,8 +21,5 @@
 ## compile_data.py
 (...)
 
-## text_template.yml
-(...)
-
 ## list-keys.md
 (...)
